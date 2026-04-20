@@ -35,6 +35,7 @@ EOF
   cat > "$WORKDIR/rserver.conf" <<EOF
 www-port=$PORT
 www-address=$ADDRESS
+www-verify-user-agent=0
 auth-none=1
 auth-minimum-user-id=$USER_ID
 server-user=$USER_NAME
