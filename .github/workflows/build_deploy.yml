@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - Dockerfile
-      - start-server.sh
+      - start-rserver.sh
   pull_request:
     branches: [main]
 
