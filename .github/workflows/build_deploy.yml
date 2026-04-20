@@ -6,6 +6,7 @@ on:
     paths:
       - Dockerfile
       - start-rserver.sh
+      - .github/workflows/build_deploy.yml
   pull_request:
     branches: [main]
 
