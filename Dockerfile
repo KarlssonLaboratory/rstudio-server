@@ -20,7 +20,7 @@ RUN R -e "install.packages(c('Seurat', 'tidyverse', 'Matrix', 'patchwork', 'remo
 RUN R -e "remotes::install_github('chris-mcginnis-ucsf/DoubletFinder@3b420df68b8e2a0cc6ebd4c5c1c7ea170464c97f', upgrade=FALSE, dependencies=TRUE)"
 
 # Entrypoint that works in both Docker (as root) and Apptainer (rootless)
-COPY start-rserver.sh /usr/local/bin/start-rserver.sh
+COPY ./start-rserver.sh /usr/local/bin/start-rserver.sh
 RUN chmod +x /usr/local/bin/start-rserver.sh
 
 EXPOSE 8787
