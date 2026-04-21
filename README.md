@@ -14,7 +14,7 @@ apptainer run \
   --cleanenv \
   --env RSTUDIO_PORT=8080 \
   --env RSTUDIO_ADDRESS=0.0.0.0 \
-  docker://ghcr.io/karlssonlaboratory/rstudio-server:c46e9ec > ~/rserver.log 2>&1
+  docker://ghcr.io/karlssonlaboratory/rstudio-server:f99f938 > ~/rserver.log 2>&1
 ```
 
 ```
@@ -24,7 +24,7 @@ ssh -v -N -L 8080:p108:8080 pelle
 
 
 ```
- ghcr.io/karlssonlaboratory/rstudio-server:c46e9ec
+ ghcr.io/karlssonlaboratory/rstudio-server:f99f938
 ```
 
 ```sh

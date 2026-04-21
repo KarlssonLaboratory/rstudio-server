@@ -17,6 +17,10 @@ if [ -z "${PASSWORD:-}" ]; then
   echo "  Password: $PASSWORD"
   echo "=================================================="
 fi
+
+# pam-helper reads USER and PASSWORD from its environment.
+# Both must be exported so the child process inherits them.
+export USER="$USER_NAME"
 export PASSWORD
 
 # rserver wants this in a .conf file too
