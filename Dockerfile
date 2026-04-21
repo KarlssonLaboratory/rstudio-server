@@ -25,5 +25,5 @@ RUN R -e "remotes::install_github('chris-mcginnis-ucsf/DoubletFinder@3b420df68b8
 COPY ./start-rserver.sh /usr/local/bin/start-rserver.sh
 RUN chmod +x /usr/local/bin/start-rserver.sh
 
-EXPOSE 8787
+EXPOSE 8080
 CMD ["/usr/local/bin/start-rserver.sh"]
