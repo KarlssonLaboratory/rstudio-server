@@ -2,10 +2,10 @@
 
 This repo holds a Docker container with Rstudio server for scRNA-seq analysis. 
 
-> [!NOTE ]
+> [!NOTE]
 > HPCs do not allow Docker containers, however, they are able to generate a singularity/apptainer image on the fly. Github only hosts Docker containers. Hence this workflow.
 
-## Running interactively
+## Running interactively ##
 
 > [!IMPORTANT]
 > The steps below are setup for running on the HPC [UPPMAX Pelle](https://docs.uppmax.uu.se/cluster_guides/pelle/).
